@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik,sans-serif:400,500,700');
+
+body {
+  background-image: url("Images/h2-background-img-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: brightness(90%);
+  background-color: black;
+  color:#ffffff;
+}
+
+
+.logo-img {
+ 
+  margin-top:10px;
+  margin-bottom: 10px;
+  margin-left:5px;
+  transform: rotate(180deg);
+  animation: logo-spin 3s ease ;
+  height: 50px;
+  width:50px;
+  
+}
+
+@keyframes logo-spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360eg);
+  }
+}
+
+.logo-img:hover {
+  animation: none;
+}
+
+
+/* Navigation Bar Styles */
+.custom-navbar {
+  
+  box-shadow: none;  
+
+}
+.fa-regular{
+  color: #ffffff; margin-left:50px;
+}
+.fa-brands{
+  color: #ffffff;
+}
+
+.navbar-nav li a{
+  
+  font-size: 1rem;
+  font-weight: 500;
+
+  letter-spacing: 1.2px;
+  transition: color 0.3s ease;
+ 
+}
+.navbar-nav .nav-iterm .nav-link {
+  color: #ffffff; 
+ 
+}
+.navbar-nav .nav-iterm .nav-link:hover {
+  color: rgb(160, 155, 155);  
+  border-image: linear-gradient(to left, rgb(160, 155, 155), transparent) 4 1;
+  /* enlarge the element minorly! */
+  
+  
+}
+.nav-iterm i{
+  color: #ffffff;
+}
+
+
+.nav-iterm i:hover{
+  color: rgb(160, 155, 155); 
+  
+}
+
+#searchForm {
+  display: none;
+  margin-left: 10px;
+  border-radius: 25px;
+ 
+}
+#searchForm.form-control {
+  color: rgb(0, 0, 0,0.5);
+}
+
+#searchIcon {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  margin: 0 10px;
+}
+
+#searchIcon:hover {
+  color: rgb(160, 155, 155);
+   
+}
+
+
+
+
+/*--- Place the toggler button on the top left corner of the screen! --*/
+.navbar-toggler {
+  position: relative;
+  right: 0;
+  padding-left:15px;
+  border: none;
+  background-color: transparent;
+  transition: transform .2s ease-in-out;
+  cursor: pointer;
+  outline: none !important;
+}
+.navbar-toggler:focus{
+  outline: none;
+}
+
+/* Rotate animation definition */
+@keyframes rotate360 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  /* Apply the animation to the icon on click */
+  .navbar-toggler .icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+   
+  }
+  .navbar-toggler.clicked .icon {
+    animation: rotate360 0.5s;
+  }
+
+  
+
+.col-lg-6 p{
+    padding-left:40px;
+    padding-right:40px;
+  }
+  .col-lg-6 h2{
+   
+    padding-left:40px;
+    padding-right:40px;
+  }
+  .col-lg-6 h3{
+    padding-left:40px;
+    padding-right:40px;
+  }
+ .btn-danger{
+    margin-left:40px;
+ }
+ .carousel-item h2 {
+  text-align: center;
+  padding:40px 0;
+ }
+.carousel-item button{
+  padding:10px 20px ;
+  font-size: large;
+  
+}
+ .carousel-item p {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left:100px;
+  margin-right:100px;
+ }
+ .carousel-inner {
+  background-color: rgb(0, 0, 0,0.3);
+  text-align: center;
+}
+.carousel-inner img{
+  width:100%;
+  height:100%;
+}
+.carousel-caption{
+  position:absolute;
+  top:60%;
+  transform:translateY(-60%)
+}
+.carousel-caption h1{
+  font-size: 260%;
+  text-shadow: 1px 1px 10px #000;
+  
+}
+
+.robo-cave{
+  background-image: url(Images/robo-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;  
+
+}
+.robo-cave::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity (last value) to your preference */
+}
+.last-img {
+  background-image: url("Images/h2-background-img-3.jpg");
+
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;  
+  
+
+}
+.last-img img{
+  padding:100px;
+}
+
+.page-footer{
+  background-color: rgb(0, 0, 0,0.3);
+}
+.sticky-button {
+  position:sticky;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin:10px
+}
